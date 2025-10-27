@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+  <head>
+    <!--meta-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <title>dante.fun</title>
+    
+    <!--link-preview-->
+    <meta property="og:title" content="dante.fun" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.dante.fun" />
+    <meta property="og:image" content="res/preview.jpg" />
+    
+    <!--style-->
+    <link rel="stylesheet" href="styles/style.css"/>
+    
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="res/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="res/favicon.ico"/>
+    <link rel="apple-touch-icon" href="res/favicon.ico">
+  </head>
+  
+  <body>
+    <!--navbar-->
+    <div id="nav">
+
+      <!--site header-->
+      <h1>dante.fun</h1>
+      
+      <!--navigation-->
+      <table>
+        <tr>
+          <td><a href="index.html">home</a></td>
+          <td>&nbsp;|&nbsp;</td>
+          <td><a href="error.html">about</a></td>
+          <td>&nbsp;|&nbsp;</td>
+          <td><a href="blog.html">blog</a></td>
+          <td>&nbsp;|&nbsp;</td>
+          <td><a href="error.html">recipes</a></td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/dante0527" target="_blank">github</a></td>
+          <td>&nbsp;|&nbsp;</td>
+          <td><a href="https://steamcommunity.com/id/HawtCoco/" target="_blank">steam</a></td>
+          <td>&nbsp;|&nbsp;</td>
+          <td><span id="discord" class="link">discord</span></td>
+          <td>&nbsp;|&nbsp;</td>
+          <td><a href="tia.html">tia</a></td>
+        </tr>
+      </table>
+
+      <br>
+      
+      <!--reveal discord on mouseover-->
+      <script>
+        const discord = document.getElementById("discord");
+
+        discord.addEventListener("mouseover", function() {
+          discord.textContent = "unavail";
+        });
+
+        discord.addEventListener("mouseout", function() {
+          discord.textContent = "discord";
+        });
+      </script>
+
+    </div>
+
+    <!--blinkies-->
+    <marquee id="blinkies" behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();">
+      <img src="blinkies/meds.gif">
+      <img src="blinkies/construct.gif">
+      <img src="blinkies/plants.gif">
+    </marquee>
+
+    <div id="main">
+
+      <!--ID card-->
+      <table class="card">
+        <tr>
+          <td><img src="images/etc/me.jpg" style="height:128px; width:auto;"></td>
+          <td>
+            Hello, I am <b><a href="https://www.dante.fun">Dante</a></b>!
+            Welcome to my website.
+            I am a Software/Data Engineer in the US! I studied
+            <span class="alt">Computer and Data Science</span> at 3 different universities.
+            I like to do a lot of different things, which you can learn about here!
+          </td>
+        </tr>
+      </table>
+      
+      <h3>Skills</h3>
+      <ul>
+        <li>
+          <span class="alt">Experienced</span>
+          with
+          <span class="alt">Python</span>
+          for
+          <span class="alt">algorithm design</span>
+          and
+          <span class="alt">automation</span>
+        </li>
+        <li>
+          <span class="alt">Focused</span>
+          on practicing
+          <span class="alt">data science</span>
+          in creative ways
+        </li>
+      </ul>
+
+      <h3>Interests</h3>
+      <ul>
+        <li>Plants</li>
+        <li>Climbing</li>
+        <li>Travel (i love trains!)</li>
+      </ul>
+      
+      <h3>Creations</h3>
+      <ul>
+        <li>Zyn Code Generator</li>
+        <ul>
+          <li>
+            This is an algorithm that intakes a list of real codes and trains a data
+            model with positional character weighting to generate realistic replications of
+            the codes.
+          </li>
+        </ul>
+      </ul>
+
+      <h3>Current Projects</h3>
+      <p>I'm currently working on...</p>
+      <ul>
+        <li><a href="https://www.dante.fun">This website</a></li>
+        <li>A website for someone else</li>
+      </ul>
+
+      <br>
+    </div>
+  
+    <br>
+    <div style="background:var(--bg); text-align:center; justify-content:center; align-items:center; width:300px; margin-left:auto; margin-right:auto; padding:10px;">
+      <!--GALLERIES-->
+      <h2>galleries</h2>
+      <div class="center">
+        <ul><a href="dante.html" id="dante">dante</a><br></ul>
+        <ul><a href="derek.html" id="derek">derek</a><br></ul>
+        <!--<ul><a href="error.html" id="cpf">cpf</a><br></ul>-->
+      </div>
+      
+      <!--PAGES-->
+      <h2>fun projects</h2>
+      <ul><a href="cheeseCorner.html">Cheese Corner</a></ul>
+      <ul><a href="fool.html">Fools Page</a></ul>
+      <ul><a href="error.html">DANGER</a></ul>
+    </div>
+
+    <!--SPLASH-->
+    <h1 style="background:var(--bg);">PROMOTIONAL ART</h1>
+
+    <div class="image">
+      <img src="images/etc/palette.jpg" alt="palette"/>
+      <img src="images/etc/fun2.jpg" alt="slpash art"/>
+      <img src="images/etc/explore.jpg" alt="slpash art"/>
+      <img src="images/etc/fun1.jpg" alt="slpash art"/>
+      <img src="images/etc/home-purple.jpg" alt="slpash art"/>
+      <img src="images/etc/dedavisgn.jpg" alt="slpash art"/>
+    </div>
+
+  </body>
+</html>
