@@ -7,6 +7,7 @@
   --fg: #333333;
   --text-primary: #ffffff;
   --text-secondary: #f198fd;
+  --text-shaded: #bebebe;
   --link: #c9a400;
 }
 
@@ -53,6 +54,10 @@
 
 .alt {
   color: var(--text-secondary);
+}
+
+.shaded {
+  color: var(--text-shaded)
 }
 
 .link {
@@ -111,7 +116,7 @@ img {
   height:auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   #nav,
   #main {
     width: 90%;
@@ -131,7 +136,7 @@ img {
 }
 
 /* Adjustments for even smaller screens */
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   #nav,
   #main {
     width: 100%;
